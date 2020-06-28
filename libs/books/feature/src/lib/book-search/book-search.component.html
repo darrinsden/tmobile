@@ -7,6 +7,7 @@
       placeholder="Search for books to add to your reading list"
       formControlName="term"
       aria-label="Search for books"
+      (keyup)="searchBooks()"
     />
     <button mat-icon-button matSuffix aria-label="Book Search">
       <mat-icon>search</mat-icon>
