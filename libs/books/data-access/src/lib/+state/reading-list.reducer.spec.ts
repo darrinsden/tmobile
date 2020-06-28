@@ -40,7 +40,7 @@ describe('Books Reducer', () => {
 
       const result: State = reducer(state, action);
 
-      expect(result.ids).to.eql(['A']);
+      expect(result.ids).to.eql(['A', 'B']);
     });
 
     it('failedRemoveFromReadingList should undo book removal from the state', () => {
@@ -50,7 +50,7 @@ describe('Books Reducer', () => {
 
       const result: State = reducer(state, action);
 
-      expect(result.ids).to.eql(['A', 'B', 'C']);
+      expect(result.ids).to.eql(['A', 'B']);
     });
   });
 
